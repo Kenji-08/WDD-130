@@ -1,0 +1,23 @@
+/*.nav-button {
+    color: red
+}*/
+
+nav a {
+    color:green;
+}
+
+nav a {
+    color: pink;
+}   
+
+/* #logo {
+    width:200px;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+} */
+
+img {
+    width: 100%;
+    height: auto;
+}
