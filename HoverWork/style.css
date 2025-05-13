@@ -1,0 +1,58 @@
+#active-hover:hover {
+    color: black;
+}
+
+#active-hover {
+    color: white;
+    padding: auto;
+}
+
+body {
+    background-color: skyblue;
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+}
+
+header {
+    color:white;
+}
+
+.header-quote {
+    color: white;
+    font-size: small;
+    width: 33%;
+    margin: 0 auto;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.header-quoter {
+    color: white;
+    font-size: medium;
+    width: 33%;
+    margin: 0 auto;
+}
+ol {
+    text-align: left;
+    margin-left: 33%;
+    color:black
+}
+
+img {
+    width: 15%;
+    height: auto;
+}
+
+footer {
+    color: black;
+    font-size: small;
+    width: 33%;
+    margin: 0 auto;
+    line-height: 1px;
+}
+
+.quote {
+    width: 20%;
+    font-size: 30px;
+    margin: 0 auto;
+}
