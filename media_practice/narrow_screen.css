@@ -46,7 +46,7 @@ nav a {
     padding: 1rem; 
     border: 8px;
     text-align: center;
-    /* shadowborder */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .card-img{
     height: 100px;
