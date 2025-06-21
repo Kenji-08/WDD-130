@@ -120,15 +120,16 @@ footer {
     background-color: #4B7F52;
     padding: 25px 50px;
     margin-top: 200px; 
-    display: flex;
+    display: grid;
     justify-content: space-around;
     align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
 footer a {
     color: #2d4530;
     text-decoration: none;  
     padding: 25px 50px;
-    margin-top: 200px; 
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -167,6 +168,11 @@ footer p a:hover {
 
 footer .social img {
     padding-top: 15px;
+}
+
+footer .social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .rivers-card, .camping-card, .rapids-card {
@@ -238,11 +244,64 @@ main section img {
     height: 100px;
 }
 
+/* rivers page CSS */
+
+.rivers-home-grid {
+    padding: 0;
+    margin: 0;
+}
+
+#rivers-hero-msg h1, #rivers-hero-msg h4 {
+    text-align: center;
+    color: white;
+}
+
+#rivers-hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+.rivers-home-title {
+    color: #4B7F52;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+#card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card{
+    padding: 1rem; 
+    border: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    height: 400px;
+    width: 400px;
+}
 
 @media screen and (max-width: 900px) {
+    html {
+        font-size: 16px;
+    }
+    body {
+        font-size: 1rem;
+    }
+    #content {
+        max-width: 100%;
+        padding: 0 10px;
+    }
     #hero, .home-grid {
         display: block;
         height: auto;
+        width: 100%;
     }
     nav, footer {
         flex-direction: column;
@@ -250,11 +309,10 @@ main section img {
     nav a {
         display: block;
         padding: 15px;
+        font-size: 1em;
     }
     #hero {
         margin-top: 0;
-        display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
     }
     #hero-msg {
         margin-top: 0;
@@ -264,24 +322,44 @@ main section img {
     }
     #hero-msg h1 {
         color: #6f7364;
+        font-size: 2em;
     }
     .home-title {
-        font-size: 25px;
+        font-size: 1.5em;
     }
     .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
+        margin: 30px auto;
+        width: 90%;
     }
     #background {
         display: none;
     }
     .mountains, .msg {
-        width: 80%;
+        width: 95%;
         display: block;
         margin: 0 auto;
     }
+    .card-img, .mountains {
+        width: 100%;
+        height: auto;
+    }
     footer {
         margin-top: 25px;
+        grid-template-columns: 1fr;
+        padding: 20px 10px;
     }
+    footer a {
+        padding: 10px 0;
+        font-size: 1em;
+    }
+
 }
-        
+
+@media (min-width:700px) {
+    /* rivers page */
+    #card-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }   
+}
