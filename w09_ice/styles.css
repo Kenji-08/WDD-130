@@ -1,0 +1,55 @@
+
+body {
+    width: 400px;
+    height: 800px;
+    background-color: black;
+    justify-self: center;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    text-align: center;
+}
+
+#card {
+    background-color: white;
+    overflow: hidden;
+    align-content: center;
+    /* margin: 0 auto;
+    padding: 0 auto; */
+}
+
+main h1 {
+    margin-bottom: 1em;
+}
+
+.main-body {
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.date {
+    color: blue;
+    margin-bottom: 0.1em;
+}
+
+footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    background-color: white;
+    color: white;
+    gap: 1px;
+}
+
+.footer-item {
+    background-color: rgb(62, 118, 198);
+}
+
+
