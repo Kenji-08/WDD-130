@@ -29,23 +29,26 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding: 0 auto;
-    margin: auto;
+    margin: 0 auto;
     background-color: var(--nav-background-color);
     display: flex;
     align-items: center;
-    position: fixed;
-    width: 100%;
-    height: 10%;
     z-index: 10000;
     border-style: solid;
-    /* border */
-    /* overflow: hidden; */
 }
 
 #logo-link img{
     grid-column: 1/2;
     height: auto;
-    width: 50%;
+    width: 60%;
+}
+
+#logo-link{
+    height: auto;
+    /* width: 30%; */
+    padding: 0;
+    margin: 0.5%;
+    grid-column: 1/2;
 }
 
 nav a {
@@ -63,7 +66,6 @@ nav a:hover{
 }
 
 nav a:nth-of-type(1){
-    margin-left: 0;
     grid-column: 2/3;
 }
 
@@ -190,7 +192,7 @@ main {
     background-color: var(--accent2-color);
     width: 75%;
     display: grid;
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: 4fr 20px 2fr 20px;
     grid-template-rows: 2fr 3fr;
     grid-row: 2/3;
     border-style: dashed;
@@ -217,8 +219,10 @@ main {
 }
 
 .carousel-item img{
-    grid-column: 2/3;
+    grid-column: 3/4;
     grid-row: 2/3;
+    width: 100%;
+    height: auto;
 }
 
 .carousel-nav{
