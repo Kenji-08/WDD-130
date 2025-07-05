@@ -221,7 +221,7 @@ main {
 .carousel-item img{
     grid-column: 3/4;
     grid-row: 2/3;
-    width: 100%;
+    width: 30%;
     height: auto;
 }
 
