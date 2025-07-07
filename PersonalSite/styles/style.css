@@ -25,6 +25,10 @@
 
 /* header and nav */
 
+body {
+    margin: 0;
+}
+
 header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
