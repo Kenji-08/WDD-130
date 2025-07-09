@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Onaka Cuisine</title>
     <link type="text/css" rel="stylesheet" href="styles/style.css"/>
+    <script scr="scripts/carousel.js" defer></script>
   </head>
   <body>
     <header>
@@ -57,7 +58,7 @@
           <div id="sushi-carousel" class="dish-carousel active">
             <div class="carousel-track">
               <!-- 1 -->
-              <div class="carousel-item">
+              <div class="carousel-item fade">
                 <h3>Nigiri</h3>
                 <p>Hand-pressed sushi: a slice of raw fish or seafood placed atop a small ball of vinegared rice. 
                   Common toppings include salmon, tuna, or shrimp.
@@ -65,7 +66,7 @@
                 <img src="images/nigiri.jpg" alt="">
               </div>
               <!-- 2 -->
-              <div class="carousel-item">
+              <div class="carousel-item fade">
                 <h3>Maki</h3>
                 <p>Rolled sushi wrapped in seaweed (nori), cut into bite-sized pieces. Filled with ingredients 
                   like cucumber, avocado, and fish. California rolls and tuna rolls are examples.
@@ -73,7 +74,7 @@
                 <img src="images/maki.jpg" alt="">
               </div>
               <!-- 3 -->
-              <div class="carousel-item">
+              <div class="carousel-item fade">
                 <h3>Uramaki</h3>
                 <p>Inside-out rolls where the rice is on the outside and nori is inside. 
                   Often topped or coated with sesame seeds, fish roe, or sauces.
@@ -81,7 +82,7 @@
                 <img src="images/uramaki.jpg" alt="">
               </div>
               <!-- 4 -->
-              <div class="carousel-item">
+              <div class="carousel-item fade">
                 <h3>Temaki</h3>
                 <p>Hand-rolled cones of nori filled with rice, vegetables, and fish. 
                   Eaten like a sushi ice cream cone, great for casual settings.
@@ -89,7 +90,7 @@
                 <img src="images/temaki.jpeg" alt="">
               </div>
               <!-- 5 -->
-              <div class="carousel-item">
+              <div class="carousel-item fade">
                 <h3>Inari</h3>
                 <p>Sushi rice stuffed inside sweet, marinated tofu pouches. Vegetarian-friendly and mildly sweet.</p>
                 <img src="images/inari.jpg" alt="">
@@ -101,7 +102,7 @@
           <div id="ramen-carousel" class="dish-carousel">
             <div class="carousel-track">
               <!-- 1 -->
-              <div class="carousel-item">
+              <div class="carousel-item fade">
                 <h3>Shoyu Ramen</h3>
                 <p>Soy sauce-based broth—clear, brown, and savory with a slightly tangy, salty flavor. 
                   Often served with chicken, bamboo shoots, and nori.
@@ -109,7 +110,7 @@
                 <img src="images/shoyu.jpg" alt="">
               </div>
               <!-- 2 -->
-              <div class="carousel-item">
+              <div class="carousel-item fade">
                 <h3>Miso Ramen</h3>
                 <p>Rich, hearty broth made from fermented soybean paste. Originating in Hokkaido, it’s thick and nutty, 
                   often topped with corn, butter, pork, and bean sprouts.
@@ -117,7 +118,7 @@
                 <img src="images/miso.jpg" alt="">
               </div>
               <!-- 3 -->
-              <div class="carousel-item">
+              <div class="carousel-item fade">
                 <h3>Shio Ramen</h3>
                 <p>Salt-based broth—light, clear, and often made with seafood or chicken. Tends to be more delicate and less fatty, 
                   with a clean flavor profile.
@@ -125,7 +126,7 @@
                 <img src="images/shio.jpg" alt="">
               </div>
               <!-- 4 -->
-              <div class="carousel-item">
+              <div class="carousel-item fade">
                 <h3>Tonkotsu Ramen</h3>
                 <p>Creamy, rich broth made by boiling pork bones for hours. It’s thick, cloudy, and savory, 
                   with a deep umami taste. Popular in Kyushu.
@@ -136,8 +137,8 @@
           </div>
           <div class="carousel-nav">
             <!-- previous and next buttons -->
-            <button class="carousel-button prev-button">Prev</button>
-            <button class="carousel-button next-button">Next</button>
+            <button class="carousel-button prev-button" onclick="PlusSlides(-1)">Prev</button>
+            <button class="carousel-button next-button" onclick="PlusSlides(1)">Next</button>
           </div>
         </section>
       

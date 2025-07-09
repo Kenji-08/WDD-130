@@ -26,7 +26,7 @@
 /* header and nav */
 
 body {
-    margin: 0;
+    margin: 0 auto;
 }
 
 header {
@@ -347,4 +347,26 @@ footer{
 .footer-plan-link:hover{
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-link-color);
+}
+
+
+/* carousel stuff */
+
+/* defaults to not showing */
+#ramen-carousel {
+    display: none;
+}
+
+.carousel-item {
+    display: none;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.prev-button:hover, .next-button:hover {
+  background-color: var(--nav-hover-link-color);
 }
