@@ -552,3 +552,16 @@ footer{
     color: var(--paragraph-background-color);
     text-align: left;
 }
+
+.phrase-header {
+    font-family: var(--heading-font);
+    font-size: clamp(3em, 5vw, 3em);
+    text-align: center;
+    align-items: center;
+    color: var(--headline-color-on-color);
+}
+
+.phrase {
+    padding: 5rem;
+    background-color: var(--primary-color);
+}
