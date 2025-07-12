@@ -525,9 +525,13 @@ footer{
 }
 
 #culture-section img {
-    width: 100%;
+    width: 90%;
     height: auto;
     padding: 2vw;
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #culture-section ol {
