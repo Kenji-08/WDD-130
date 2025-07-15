@@ -391,15 +391,16 @@ footer{
 
 /* defaults to not showing */
 
-/* .carousel-item {
-    display: none;
-} */
 
-.active {
-    display: show;
+/* Hide all carousel items by default */
+.carousel-item {
+    display: none;
 }
 
-.show
+/* Show the active carousel item */
+.carousel-item.active {
+    display: grid;
+}
 
 /* Fading animation */
 .fade {
