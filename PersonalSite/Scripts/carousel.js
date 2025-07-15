@@ -38,35 +38,26 @@ function showSlides(n) {
   let ramen_slides = document.getElementsByClassName("ramen");
   let sushi_button = document.getElementById("sushi-button");
   let ramen_button = document.getElementById("ramen-button");
-  if (slide_type === 0 ){
-    if (n > sushi_slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = sushi_slides.length}
-    for (i = 0; i < sushi_slides.length; i++) {
-      sushi_slides[i].style.display = "none";
-    }
-    // change button background color to white
-    sushi_button.style.backgroundColor = "#F2F2F2";
-    ramen_button.style.backgroundColor = "#4C7262";
-    // Remove 'active' class from all slides
-    for (i = 0; i < sushi_slides.length; i++) {
-      sushi_slides[i].classList.remove("active");
-    }
-    // Show the current slide and add 'active' class
-    sushi_slides[slideIndex-1].style.display = "grid";
-    sushi_slides[slideIndex-1].classList.add("active");
-  
- }
-  
-  else if (slide_type === 1) {
-    if (n > ramen_slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = ramen_slides.length}
-    for (i = 0; i < ramen_slides.length; i++) {
-      ramen_slides[i].style.display = "none";
-    }
-    // change button background color to white
-    ramen_button.style.backgroundColor = "#F2F2F2";
-    sushi_button.style.backgroundColor = "#4C7262";
-    ramen_slides[slideIndex-1].style.display = "grid";
+
+  // Hide all slides and remove 'active' class
+  for (i = 0; i < sushi_slides.length; i++) {
+    sushi_slides[i].classList.remove("active");
+  }
+  for (i = 0; i < ramen_slides.length; i++) {
+    ramen_slides[i].classList.remove("active");
   }
 
+  if (slide_type === 0) {
+    if (n > sushi_slides.length) {slideIndex = 1;}
+    if (n < 1) {slideIndex = sushi_slides.length;}
+    sushi_button.style.backgroundColor = "#F2F2F2";
+    ramen_button.style.backgroundColor = "#4C7262";
+    sushi_slides[slideIndex - 1].classList.add("active");
+  } else if (slide_type === 1) {
+    if (n > ramen_slides.length) {slideIndex = 1;}
+    if (n < 1) {slideIndex = ramen_slides.length;}
+    ramen_button.style.backgroundColor = "#F2F2F2";
+    sushi_button.style.backgroundColor = "#4C7262";
+    ramen_slides[slideIndex - 1].classList.add("active");
+  }
 }
