@@ -344,6 +344,9 @@ footer{
 }
 
 #contacts a{
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0;
     color: var(--nav-link-color);
     background-color: var(--nav-background-color);
 }
@@ -365,6 +368,7 @@ footer{
 
 .socials {
     grid-column:2/3;
+    text-decoration: none;
 }
 
 .socials img{
@@ -562,3 +566,98 @@ footer{
     padding: 5rem;
     background-color: var(--primary-color);
 }
+
+#word-index {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 5vw;
+}
+
+#pronunciation-header{
+    font-family: var(--heading-font);
+    font-size: clamp(3em, 5vw, 3em);
+    text-align: center;
+    padding: 2vw;
+    color: var(--headline-color-on-color);
+}
+
+#tips-section {
+    padding: 5rem;
+    background-color: var(--secondary-color);
+}
+
+#tips-section h2:nth-of-type(1) {
+    margin: 0 auto;
+    padding: 0;
+    font-family: var(--heading-font);
+    font-size: clamp(4em, 5vw, 4em);
+    text-align: center;
+    border-style:groove;
+    border-radius: 10px;
+    border-color: var(--accent2-color);
+    border-width: 1vw;
+}
+
+#tips-section h3 {
+    font-family: var(--heading-font);
+    font-size: clamp(2em, 3vw, 2em);
+    text-align: center;
+    padding: 1vw;
+    color: var(--headline-color-on-color);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#tips-section img {
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vowels-description {
+    font-size: clamp(1.5vw, 2vw, 2vw);
+    margin: 5vw auto;
+    color: var(--paragraph-color-on-color);
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    padding-bottom: 2vw;
+}
+
+.glottal-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vw;
+    width: 100%;
+    border-style: dashed;
+    border-radius: 10px;
+}
+
+.glottal-content h1{
+    border-style: none;
+    font-family: var(--heading-font);
+    font-size: clamp(3em, 5vw, 3em);
+    text-align: center;
+    margin: auto;
+    color: var(--headline-color-on-color);
+}
+
+.glottal-content p {
+    font-size: clamp(1.5vw, 2vw, 2vw);
+    margin: 0 auto;
+    color: var(--paragraph-color-on-color);
+    text-align: center;
+    width: 100%;
+    padding: 1vw;
+}
+
+.tofugu-img p{
+    font-style: italic;
+}
+/* use a @media for smaller screens */
