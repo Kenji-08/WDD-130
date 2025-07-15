@@ -47,7 +47,13 @@ function showSlides(n) {
     // change button background color to white
     sushi_button.style.backgroundColor = "#F2F2F2";
     ramen_button.style.backgroundColor = "#4C7262";
+    // Remove 'active' class from all slides
+    for (i = 0; i < sushi_slides.length; i++) {
+      sushi_slides[i].classList.remove("active");
+    }
+    // Show the current slide and add 'active' class
     sushi_slides[slideIndex-1].style.display = "grid";
+    sushi_slides[slideIndex-1].classList.add("active");
   
  }
   

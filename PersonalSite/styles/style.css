@@ -391,12 +391,12 @@ footer{
 
 /* defaults to not showing */
 
-.carousel-item {
+/* .carousel-item {
     display: none;
-}
+} */
 
 .active {
-    display: grid;
+    display: show;
 }
 
 .show
