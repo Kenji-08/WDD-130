@@ -581,10 +581,14 @@ footer{
 
 #pronunciation-header{
     font-family: var(--heading-font);
-    font-size: clamp(3em, 5vw, 3em);
+    font-size: clamp(5em, 5vw, 5em);
     text-align: center;
     padding: 2vw;
     color: var(--headline-color-on-color);
+    border-style: dotted;
+    border-color: var(--paragraph-background-color);
+    border-width: 10px;
+    margin-bottom: 5vw;
 }
 
 #tips-section {
@@ -665,4 +669,26 @@ footer{
 .tofugu-img p{
     font-style: italic;
 }
-/* use a @media for smaller screens */
+/* use a @media for phone screens make sure all text is readable and not small */
+@media (max-width: 300px) {
+    body {
+        font-size: 1.2em;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        font-size: 1.5em;
+        margin: 1rem;
+    }
+    #hero h1, h2 {
+        font-size: 2em;
+    }
+    .dish-title, .restaurant-title {
+        font-size: 2em;
+    }
+    .motto {
+        font-size: 1.5em;
+    }
+}
