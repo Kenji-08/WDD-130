@@ -14,22 +14,21 @@ function currentSlide(n) {
 }
 
 function switch_slides(n) {
+  const sushiCarousel = document.getElementById("sushi-carousel");
+  const ramenCarousel = document.getElementById("ramen-carousel");
   if (n === 0) {
-    document.getElementById("ramen-carousel").style.display = "none";
-    document.getElementById("sushi-carousel").style.display = "grid";
+    ramenCarousel.style.display = "none";
+    sushiCarousel.style.display = "block";
     slide_type = 0;
     slideIndex = 1;
     showSlides(slideIndex);
-  }
-
-  if (n === 1) {
-    document.getElementById("sushi-carousel").style.display = "none";
-    document.getElementById("ramen-carousel").style.display = "grid";
+  } else if (n === 1) {
+    sushiCarousel.style.display = "none";
+    ramenCarousel.style.display = "block";
     slide_type = 1;
-    slideIndex = 2;
+    slideIndex = 1;
     showSlides(slideIndex);
   }
-
 }
 
 function showSlides(n) {

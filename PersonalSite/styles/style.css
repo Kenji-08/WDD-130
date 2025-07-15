@@ -282,7 +282,7 @@ main {
 }
 
 .restaurant-card{
-    width: 50%;
+    width: 90%;
     height: auto;
     background-color: var(--paragraph-background-color);
     display: block;
