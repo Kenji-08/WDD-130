@@ -48,97 +48,99 @@
 
           <img class="dish-image" src="images/JP_chef.jpg" alt="image for homepage" />
 
-          <!-- tabs -->
-          <div class="dish-tabs">
-            <button class="tab-button" id="sushi-button" data-target="sushi-carousel" onclick="switch_slides(0)">Sushi</button>
-            <button class="tab-button" id="ramen-button" data-target="ramen-carousel" onclick="switch_slides(1)">Ramen</button>
-          </div>
-
-          <!-- sushi -->
-          <div id="sushi-carousel" class="dish-carousel">
-            <div class="carousel-track">
-              <!-- 1 -->
-              <div class="carousel-item fade sushi active">
-                <h3>Nigiri</h3>
-                <p>Hand-pressed sushi: a slice of raw fish or seafood placed atop a small ball of vinegared rice. 
-                  Common toppings include salmon, tuna, or shrimp.
-                </p>
-                <img src="images/nigiri.jpg" alt="">
-              </div>
-              <!-- 2 -->
-              <div class="carousel-item fade sushi">
-                <h3>Maki</h3>
-                <p>Rolled sushi wrapped in seaweed (nori), cut into bite-sized pieces. Filled with ingredients 
-                  like cucumber, avocado, and fish. California rolls and tuna rolls are examples.
-                </p>
-                <img src="images/maki.jpg" alt="">
-              </div>
-              <!-- 3 -->
-              <div class="carousel-item fade sushi">
-                <h3>Uramaki</h3>
-                <p>Inside-out rolls where the rice is on the outside and nori is inside. 
-                  Often topped or coated with sesame seeds, fish roe, or sauces.
-                </p>
-                <img src="images/uramaki.jpg" alt="">
-              </div>
-              <!-- 4 -->
-              <div class="carousel-item fade sushi">
-                <h3>Temaki</h3>
-                <p>Hand-rolled cones of nori filled with rice, vegetables, and fish. 
-                  Eaten like a sushi ice cream cone, great for casual settings.
-                </p>
-                <img src="images/temaki.jpeg" alt="">
-              </div>
-              <!-- 5 -->
-              <div class="carousel-item fade sushi">
-                <h3>Inari</h3>
-                <p>Sushi rice stuffed inside sweet, marinated tofu pouches. Vegetarian-friendly and mildly sweet.</p>
-                <img src="images/inari.jpg" alt="">
+          <div id="carousel-box">
+            <!-- tabs -->
+            <div class="dish-tabs">
+              <button class="tab-button" id="sushi-button" data-target="sushi-carousel" onclick="switch_slides(0)">Sushi</button>
+              <button class="tab-button" id="ramen-button" data-target="ramen-carousel" onclick="switch_slides(1)">Ramen</button>
+            </div>
+  
+            <!-- sushi -->
+            <div id="sushi-carousel" class="dish-carousel">
+              <div class="carousel-track">
+                <!-- 1 -->
+                <div class="carousel-item fade sushi active">
+                  <h3>Nigiri</h3>
+                  <p>Hand-pressed sushi: a slice of raw fish or seafood placed atop a small ball of vinegared rice. 
+                    Common toppings include salmon, tuna, or shrimp.
+                  </p>
+                  <img src="images/nigiri.jpg" alt="">
+                </div>
+                <!-- 2 -->
+                <div class="carousel-item fade sushi">
+                  <h3>Maki</h3>
+                  <p>Rolled sushi wrapped in seaweed (nori), cut into bite-sized pieces. Filled with ingredients 
+                    like cucumber, avocado, and fish. California rolls and tuna rolls are examples.
+                  </p>
+                  <img src="images/maki.jpg" alt="">
+                </div>
+                <!-- 3 -->
+                <div class="carousel-item fade sushi">
+                  <h3>Uramaki</h3>
+                  <p>Inside-out rolls where the rice is on the outside and nori is inside. 
+                    Often topped or coated with sesame seeds, fish roe, or sauces.
+                  </p>
+                  <img src="images/uramaki.jpg" alt="">
+                </div>
+                <!-- 4 -->
+                <div class="carousel-item fade sushi">
+                  <h3>Temaki</h3>
+                  <p>Hand-rolled cones of nori filled with rice, vegetables, and fish. 
+                    Eaten like a sushi ice cream cone, great for casual settings.
+                  </p>
+                  <img src="images/temaki.jpeg" alt="">
+                </div>
+                <!-- 5 -->
+                <div class="carousel-item fade sushi">
+                  <h3>Inari</h3>
+                  <p>Sushi rice stuffed inside sweet, marinated tofu pouches. Vegetarian-friendly and mildly sweet.</p>
+                  <img src="images/inari.jpg" alt="">
+                </div>
               </div>
             </div>
-          </div>
-
-          <!-- ramen -->
-          <div id="ramen-carousel" class="dish-carousel">
-            <div class="carousel-track">
-              <!-- 1 -->
-              <div class="carousel-item fade ramen">
-                <h3>Shoyu Ramen</h3>
-                <p>Soy sauce-based broth—clear, brown, and savory with a slightly tangy, salty flavor. 
-                  Often served with chicken, bamboo shoots, and nori.
-                </p>
-                <img src="images/shoyu.jpg" alt="">
-              </div>
-              <!-- 2 -->
-              <div class="carousel-item fade ramen">
-                <h3>Miso Ramen</h3>
-                <p>Rich, hearty broth made from fermented soybean paste. Originating in Hokkaido, it’s thick and nutty, 
-                  often topped with corn, butter, pork, and bean sprouts.
-                </p>
-                <img src="images/miso.jpg" alt="">
-              </div>
-              <!-- 3 -->
-              <div class="carousel-item fade ramen">
-                <h3>Shio Ramen</h3>
-                <p>Salt-based broth—light, clear, and often made with seafood or chicken. Tends to be more delicate and less fatty, 
-                  with a clean flavor profile.
-                </p>
-                <img src="images/shio.jpg" alt="">
-              </div>
-              <!-- 4 -->
-              <div class="carousel-item fade ramen">
-                <h3>Tonkotsu Ramen</h3>
-                <p>Creamy, rich broth made by boiling pork bones for hours. It’s thick, cloudy, and savory, 
-                  with a deep umami taste. Popular in Kyushu.
-                </p>
-                <img src="images/tonkotsu.jpg" alt="">
+  
+            <!-- ramen -->
+            <div id="ramen-carousel" class="dish-carousel">
+              <div class="carousel-track">
+                <!-- 1 -->
+                <div class="carousel-item fade ramen">
+                  <h3>Shoyu Ramen</h3>
+                  <p>Soy sauce-based broth—clear, brown, and savory with a slightly tangy, salty flavor. 
+                    Often served with chicken, bamboo shoots, and nori.
+                  </p>
+                  <img src="images/shoyu.jpg" alt="">
+                </div>
+                <!-- 2 -->
+                <div class="carousel-item fade ramen">
+                  <h3>Miso Ramen</h3>
+                  <p>Rich, hearty broth made from fermented soybean paste. Originating in Hokkaido, it’s thick and nutty, 
+                    often topped with corn, butter, pork, and bean sprouts.
+                  </p>
+                  <img src="images/miso.jpg" alt="">
+                </div>
+                <!-- 3 -->
+                <div class="carousel-item fade ramen">
+                  <h3>Shio Ramen</h3>
+                  <p>Salt-based broth—light, clear, and often made with seafood or chicken. Tends to be more delicate and less fatty, 
+                    with a clean flavor profile.
+                  </p>
+                  <img src="images/shio.jpg" alt="">
+                </div>
+                <!-- 4 -->
+                <div class="carousel-item fade ramen">
+                  <h3>Tonkotsu Ramen</h3>
+                  <p>Creamy, rich broth made by boiling pork bones for hours. It’s thick, cloudy, and savory, 
+                    with a deep umami taste. Popular in Kyushu.
+                  </p>
+                  <img src="images/tonkotsu.jpg" alt="">
+                </div>
               </div>
             </div>
-          </div>
-          <div class="carousel-nav">
-            <!-- previous and next buttons -->
-            <button class="carousel-button prev-button" onclick="plusSlides(-1)">Prev</button>
-            <button class="carousel-button next-button" onclick="plusSlides(1)">Next</button>
+            <div class="carousel-nav">
+              <!-- previous and next buttons -->
+              <button class="carousel-button prev-button" onclick="plusSlides(-1)">Prev</button>
+              <button class="carousel-button next-button" onclick="plusSlides(1)">Next</button>
+            </div>
           </div>
         </section>
       
