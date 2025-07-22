@@ -152,7 +152,7 @@ main {
 .motto {
     padding: 0 5vw;
     margin: 5rem 2rem 5rem 2rem;
-    font-size: clamp(3em, 5vw, 3em);
+    font-size: 5vw;
     font-family: var(--heading-font);
     color: var(--headline-color-on-color);
     border-style: dashed;
@@ -432,6 +432,10 @@ footer{
 
 /* culture page */
 
+.phrase {
+    justify-content: center;
+}
+
 #phrases-section {
     background-color: var(--secondary-color);
     padding: 5vw;
@@ -604,7 +608,7 @@ footer{
 
 #pronunciation-header{
     font-family: var(--heading-font);
-    font-size: clamp(5em, 5vw, 5em);
+    font-size: 5vw;
     text-align: center;
     padding: 2vw;
     color: var(--headline-color-on-color);
@@ -623,7 +627,7 @@ footer{
     margin: 0 auto;
     padding: 0;
     font-family: var(--heading-font);
-    font-size: clamp(4em, 5vw, 4em);
+    font-size: 5vw;
     text-align: center;
     border-style:groove;
     border-radius: 10px;
@@ -633,7 +637,7 @@ footer{
 
 #tips-section h3 {
     font-family: var(--heading-font);
-    font-size: clamp(2em, 3vw, 2em);
+    font-size: 3vw;
     text-align: center;
     padding: 1vw;
     color: var(--headline-color-on-color);
@@ -651,7 +655,7 @@ footer{
 }
 
 .vowels-description {
-    font-size: clamp(1.5vw, 2vw, 2vw);
+    font-size: 2vw;
     margin: 5vw auto;
     color: var(--paragraph-color-on-color);
     text-align: center;
@@ -661,12 +665,11 @@ footer{
 }
 
 .glottal-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
     margin-left: auto;
     margin-right: auto;
     padding: 2vw;
-    width: 100%;
     border-style: dashed;
     border-radius: 10px;
 }
@@ -674,18 +677,17 @@ footer{
 .glottal-content h1{
     border-style: none;
     font-family: var(--heading-font);
-    font-size: clamp(3em, 5vw, 3em);
+    font-size: 5vw;
     text-align: center;
     margin: auto;
     color: var(--headline-color-on-color);
 }
 
 .glottal-content p {
-    font-size: clamp(1.5vw, 2vw, 2vw);
-    margin: 0 auto;
+    font-size: 2vw;
+    margin: auto;
     color: var(--paragraph-color-on-color);
     text-align: center;
-    width: 100%;
     padding: 1vw;
 }
 
@@ -806,13 +808,13 @@ footer{
     }
 
     footer {
-        width: 100%;
+        /* width: 100%; */
         text-align: center;
     }
 
     .footer-head {
-        font-size: 15vw;
-        margin: 0 auto;
+        font-size: 10vw;
+        margin: auto;
         padding: 0 0 5vw 0;
     }
 
@@ -823,9 +825,8 @@ footer{
     }
 
     #contacts a {
-        font-size: 7vw;
+        font-size: 6vw;
         padding: 0;
-        width: 80vw;
         text-align: center;
     }
 
@@ -849,7 +850,6 @@ footer{
         margin: auto;
         display: flex;
         flex-direction: column;
-
     }
 
     #phrases-hero h2 {
@@ -882,6 +882,8 @@ footer{
 
     #culture-section {
         padding: 2vw;
+        align-items: center;
+        margin: auto;
     }
 
     #culture-section img {
