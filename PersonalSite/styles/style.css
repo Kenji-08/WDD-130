@@ -603,6 +603,7 @@ footer{
     margin-right: auto;
     width: 100%;
     margin-bottom: 5vw;
+    font-size: 2vw;
 }
 
 #pronunciation-header{
@@ -658,7 +659,6 @@ footer{
     margin: 5vw auto;
     color: var(--paragraph-color-on-color);
     text-align: center;
-    width: 100%;
     font-style: italic;
     padding-bottom: 2vw;
 }
@@ -892,5 +892,41 @@ footer{
 
     #culture-section ol {
         font-size: 5vw;
+    }
+
+    #pronunciation-header {
+        font-size: 10vw;
+    }
+
+    #word-index {
+        font-size: 4vw;
+    }
+
+    #tips-section {
+        font-size: 4vw;
+        padding: 1vw;
+        padding-bottom: 50px;
+    }
+
+    #tips-section h3 {
+        font-size: 5vw;
+    }
+
+    .tofugu-img p {
+        font-size: 2vw;
+        padding-bottom: 2vw;
+        margin: 0 auto;
+    }
+
+    .vowels-description p {
+        font-size: 4vw;
+    }
+
+    .glottal-content h1{
+        font-size: 9vw;
+    }
+
+    .glottal-content p {
+        font-size: 4vw;
     }
 }
